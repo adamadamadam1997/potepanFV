@@ -76,11 +76,20 @@ header img:hover {
     display: block;
     border-radius: 4px;
     background-color: #9c9a9a;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
 
 .menuBtn.open .line:nth-child(1) {
-    transform: translateY(7px) rotate();
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menuBtn.open .line:nth-child(2) {
+    transform: translateX(18px);
+    opacity: 0;
+}
+
+.menuBtn.open .line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 .nav {
@@ -124,8 +133,6 @@ header img:hover {
 .navList li a:hover {
     opacity: 0.6;
 }
-
-
 
 .linkBtn {
     display: inline-block;
